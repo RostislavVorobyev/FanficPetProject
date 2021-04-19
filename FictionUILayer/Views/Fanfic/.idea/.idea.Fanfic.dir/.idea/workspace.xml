@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6e9eace-2ca2-4fb1-bdef-187acaf113fe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../../../DataLayer/Implementations/GenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DataLayer/Implementations/GenreRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DataLayer/Implementations/TagRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DataLayer/Implementations/TagRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DataLayer/Interfaces/IGenreRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DataLayer/Interfaces/IGenreRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../DataLayer/Interfaces/ITagRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../DataLayer/Interfaces/ITagRepository.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FictionLogicLayer/Mappers/GenreMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FictionLogicLayer/Mappers/GenreMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FictionLogicLayer/Mappers/LikeMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FictionLogicLayer/Mappers/LikeMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../FictionLogicLayer/Services/ChapterService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../../FictionLogicLayer/Services/ChapterService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Controllers/ReadFanficController.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../../Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Home/Index.cshtml" beforeDir="false" afterPath="$PROJECT_DIR$/../Home/Index.cshtml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ReadFanfic/Read.cshtml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="1kQoEdno5KQIeof863B4FrFuupu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <created>1605642085702</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605642085702</updated>
+      <workItem from="1605642200747" duration="2000" />
+    </task>
+    <servers />
+  </component>
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

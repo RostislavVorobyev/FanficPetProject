@@ -1,0 +1,30 @@
+﻿@model FictionLogicLayer.Entities.ChapterDTO
+
+<h1>Edit chapter</h1>
+
+<div class="row">
+    <div class="col">
+        <form asp-action="Edit">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" class="form-control" value="@Model.Id" name="id" />
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" name="newName" value="@Model.Name" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Text" class="control-label"></label>
+                <textarea style="height: 300px" asp-for="Text" name="editedText" class="form-control">@Model.Text</textarea>
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    @Html.ActionLink("Back", "Details", "Chapter", new { id = Model.Id })
+</div>
+

@@ -1,0 +1,41 @@
+﻿@model FictionUILayer.ViewModels.RegisterViewModel
+    <head>
+        <link rel="stylesheet" href="~/css/auth.css" />
+    </head>
+    <div class="login-form">
+        <form method="post" asp-controller="Account" asp-action="Register">
+            <div asp-validation-summary="ModelOnly"></div>
+
+            <span asp-validation-for="Email"></span>
+            <span asp-validation-for="UserName"></span>
+            <span asp-validation-for="Password"></span>
+            <span asp-validation-for="PasswordConfirm"></span>
+
+            <h2 class="text-center">Sign up</h2>
+
+            <div class="form-group">
+                <div>
+                    <input asp-for="Email" class="form-control" placeholder="Email" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div>
+                    <input asp-for="UserName" class="form-control" placeholder="Username" />
+                </div>
+            </div>
+
+            <div class="form-group">
+                <input asp-for="Password" class="form-control" placeholder="Password" />
+            </div>
+
+            <div class="form-group">
+                <input asp-for="PasswordConfirm" class="form-control" placeholder="Confirm password" />
+            </div>
+
+            <div class="form-group">
+                <button type="submit" value="Sign up" class="btn btn-dark btn-block">Sign up</button>
+            </div>
+
+        </form>
+    </div>

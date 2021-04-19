@@ -1,0 +1,27 @@
+﻿@model HomeViewModel
+<html>
+<body>
+        
+    <div class="text-center">
+        <h1 class="display-4">MOST RATED</h1>
+    </div>
+
+    @foreach (var f in Model.MostRated)
+    {
+        @Html.ActionLink(@f.Name, "Read", "Fanfic", new { id = @f.Id })
+        <h2>Автор: @f.Author.UserName</h2>
+        <h2>Рейтинг: @f.RatingValue</h2>
+    }
+    <div class="text-center">
+        <h1 class="display-4">Recently Updated</h1>
+    </div>
+    @foreach (var f in Model.RecentlyUpdated)
+    {
+        @Html.ActionLink(@f.Name, "Read", "Fanfic", new { id = @f.Id })
+        <h2>Автор: @f.Author.UserName</h2>
+        <h2>Рейтинг: @f.RatingValue</h2>
+    }
+</body>
+</html>
+
+

@@ -1,0 +1,33 @@
+﻿@model FictionUILayer.ViewModels.LoginViewModel
+    <head>
+        <link rel="stylesheet" href="~/css/auth.css" />
+    </head>
+
+<div class="login-form">
+    <form method="post" asp-controller="Account" asp-action="Login"
+          asp-route-returnUrl="@Model.ReturnUrl">
+        <div asp-validation-summary="ModelOnly"></div>
+        <span asp-validation-for="Login"></span>
+        <span asp-validation-for="Password"></span>
+
+        <h2 class="text-center">Log in</h2>
+
+        <div class="form-group">
+            <div>
+                <input asp-for="Login" class="form-control" placeholder="Username" />
+            </div>
+        </div>
+
+        <div class="form-group">
+            <input asp-for="Password" class="form-control" placeholder="Password" />
+        </div>
+
+        <div class="form-group">
+            <button type="submit" value="Log in" class="btn btn-dark btn-block">Log in</button>
+        </div>
+        <div class="form-group">
+            <label asp-for="RememberMe"><input asp-for="RememberMe" /> Remember me </label><br />
+        </div>
+    </form>
+</div>
+

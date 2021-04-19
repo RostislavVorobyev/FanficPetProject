@@ -1,0 +1,37 @@
+﻿@model FictionUILayer.ViewModels.FanficCreationViewModel
+
+<h1>CreateFanfic</h1>
+
+<form method="post">
+
+    <p>
+        <label>name:</label><br />
+        <input type="text" name="name" />
+    </p>
+
+    <p>
+        <label>desctiption:</label><br />
+        <textarea name="desctiption"></textarea>
+    </p>
+
+    <p>
+        <label for="genreId">Жанр:</label>
+        <select name="genreId">
+            @foreach (var g in Model.Genres)
+            {
+                <option value=@g.Id>@g.Name</option>
+            }
+        </select>
+    </p>
+
+    <p>
+        <input type="submit" value="Create" />
+    </p>
+
+</form>
+
+
+<div>
+    <a asp-controller="Home" asp-action="Index">Back to List</a>
+</div>
+

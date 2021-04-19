@@ -1,0 +1,36 @@
+﻿@model FictionLogicLayer.Entities.ChapterDTO
+
+<div class="align-content-center">
+    <div class="row">
+        <div class="col">@Html.ActionLink("Edit chapter", "Edit", "Chapter", new { chapterId = @Model.Id })</div>
+        <div class="col">@Html.ActionLink("Delete chapter", "Delete", "Chapter", new { chapterId = @Model.Id })</div>
+        <div class="col">@Html.ActionLink("Like", "AddLike", "Chapter", new { chapterId = @Model.Id })</div>
+
+    </div>
+
+    <h1> Chapter @Model.ChapterNumber: @Model.Name Likes: @Model.LikesCounter</h1>
+    <div class="row">
+
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    @Model.ChapterNumber: @Model.Name
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @foreach (var c in Model.Fanfic.Chapters)
+                    {
+                        <div class="dropdown-item">
+                            @Html.ActionLink(new string(@c.ChapterNumber + ": " + @c.Name), "Details", "Chapter", new { chapterId = @c.Id })
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-md-12">
+                @Html.DisplayFor(model => model.Text)
+            </div>
+        </div>
+
+        @Html.ActionLink("Back to fanfic page", "Read", "Fanfic", new { id = @Model.Fanfic.Id })
+
+    </div>
+

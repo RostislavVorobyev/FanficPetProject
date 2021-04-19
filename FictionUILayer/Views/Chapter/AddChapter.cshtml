@@ -1,0 +1,30 @@
+﻿@model FictionUILayer.ViewModels.ChapterCrationViewModel
+
+<h1>Add new chapter</h1>
+
+<div class="row">
+    <div class="col-md-12">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" name="fanficId" value="@Model.FanficId" class="form-control" />
+
+            <div class="form-group">
+                <label>Chapter name:</label>
+                <input asp-for="Name" name="name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label>Text:</label>
+                <textarea asp-for="Text" name="text" class="form-control" style="height: 450px"></textarea>
+                <span asp-validation-for="Text" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input asp-route-id="@Model.FanficId" type="submit" value="Save" class="btn btn-dark" />
+            </div>
+        </form>
+    </div>
+</div>
+<div>
+    @Html.ActionLink("Back", "Read", "Fanfic", new { id = Model.FanficId })
+</div>
+
